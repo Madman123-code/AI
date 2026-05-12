@@ -1,0 +1,150 @@
+You are on the correct page. Now follow these steps exactly to execute your Salesforce practical. The uploaded PDF also shows the same procedure. 
+Step-by-Step Execution
+Step 1: Open Setup
+
+
+Click the ⚙️ Gear Icon at the top-right
+
+
+Select Setup
+
+
+
+Step 2: Create Custom Object
+
+
+In Setup search bar, type Object Manager
+
+
+Open Object Manager
+
+
+Click Create → Custom Object 
+
+
+
+Step 3: Enter Object Details
+Fill like this:
+
+
+Label: Comment
+
+
+Plural Label: Comments
+
+
+Record Name: Comment Name
+
+
+Data Type: Text
+
+
+Tick:
+
+
+✅ Allow Reports
+
+
+Then click Save. 
+
+Step 4: Create Tab
+
+
+In Setup search, type Tabs
+
+
+Open Tabs
+
+
+Under Custom Object Tabs, click New
+
+
+Now:
+
+
+Select Object = Comment
+
+
+Choose any icon/tab style
+
+
+Click Next → Next → Save 
+
+
+
+Step 5: Create App
+
+
+Search App Manager
+
+
+Open App Manager
+
+
+Click New Lightning App 
+
+
+Fill:
+
+
+App Name = Comment Box App
+
+
+Click:
+
+
+Next → Next → Next
+
+
+
+Step 6: Add Items
+Move these to selected items:
+
+
+Contacts
+
+
+Comments
+
+
+Click Next. 
+
+Step 7: Select Profile
+
+
+Select System Administrator
+
+
+Move it to Selected Profiles
+
+
+Click Save & Finish 
+
+
+
+Step 8: Open Your App
+
+
+Click the App Launcher (9 dots icon)
+
+
+Search and open Comment Box App 
+
+
+
+Step 9: Create Record
+
+
+Open Comments
+
+
+Click New
+
+
+Enter any comment
+
+
+Save it
+
+
+Your mini project is completed successfully.
