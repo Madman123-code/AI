@@ -1,0 +1,19 @@
+1. new project
+2. create project/select project
+3. search/app engine admin api
+4. sleect project
+5. selet cloud shell right top
+
+
+ncp_virajsinh@cloudshell:~ (virajp)$ ls
+dbms  java  README-cloudshell.txt
+ncp_virajsinh@cloudshell:~ (virajp)$ git clone https://github.com/Praj1703/dbms.git
+fatal: destination path 'dbms' already exists and is not an empty directory.
+ncp_virajsinh@cloudshell:~ (virajp)$ ls
+dbms  java  README-cloudshell.txt
+ncp_virajsinh@cloudshell:~ (virajp)$ cd DBMS
+-bash: cd: DBMS: No such file or directory
+ncp_virajsinh@cloudshell:~ (virajp)$ cd dbms
+ncp_virajsinh@cloudshell:~/dbms (virajp)$ cd SPOS
+ncp_virajsinh@cloudshell:~/dbms/SPOS (virajp)$ javac FCFS.java
+ncp_virajsinh@cloudshell:~/dbms/SPOS (virajp)$ java FCFS
