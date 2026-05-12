@@ -1,0 +1,37 @@
+public class Calculator {
+
+    // Addition
+    public static Decimal addNumbers(Decimal a, Decimal b) {
+        return a + b;
+    }
+
+    // Subtraction
+    public static Decimal subtractNumbers(Decimal a, Decimal b) {
+        return a - b;
+    }
+
+    // Multiplication
+    public static Decimal multiplyNumbers(Decimal a, Decimal b) {
+        return a * b;
+    }
+
+    // Division
+    public static Decimal divideNumbers(Decimal a, Decimal b) {
+        if (b == 0) {
+            System.debug('Error: Division by zero is not allowed.');
+            return null;
+        }
+        return a / b;
+    }
+
+    // Test method
+    public static void testCalculator() {
+        Decimal num1 = 10;
+        Decimal num2 = 5;
+
+        System.debug('Addition: ' + addNumbers(num1, num2));
+        System.debug('Subtraction: ' + subtractNumbers(num1, num2));
+        System.debug('Multiplication: ' + multiplyNumbers(num1, num2));
+        System.debug('Division: ' + divideNumbers(num1, num2));
+    }
+}
