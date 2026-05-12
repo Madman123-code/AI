@@ -1,0 +1,58 @@
+import sys
+
+def prim(graph, n):
+    selected = [False] * n
+    edge_count = 0
+    selected[0] = True
+    
+    print("Edge  \tWeight")
+    while edge_count < n - 1:
+        minimum = sys.maxsize
+        x = 0
+        y = 0
+        for i in range(n):
+            if selected[i]:
+                for j in range(n):
+                    if not selected[j] and graph[i][j]:
+                        if graph[i][j] < minimum:
+                            minimum = graph[i][j]
+                            x = i
+                            y = j
+                            
+        print(f"{x}-{y}  \t{graph[x][y]}")
+        selected[y] = True
+        edge_count += 1
+
+def take_user_input():
+    n = int(input("Enter the number of vertices in the graph: "))
+    
+    # Create an adjacency matrix for the graph
+    graph = []
+    print(f"Enter the weights for the {n}x{n} adjacency matrix:")
+    for i in range(n):
+        row = list(map(int, input(f"Enter row {i + 1} (space-separated values): ").strip().split()))
+        graph.append(row)
+    
+    return graph, n
+
+if __name__ == "__main__":
+    graph, n = take_user_input()
+    prim(graph, n)
+
+
+algo
+Start
+Create a graph using adjacency matrix
+Select any starting vertex
+Mark the selected vertex as visited
+Repeat until all vertices are visited:
+   Find the minimum weight edge from visited vertex to unvisited vertex
+   Select that edge
+    Print the edge and its weight
+    Mark the new vertex as visited
+Continue until N-1 edges are selected
+Stop
+
+
+
+    no_edge += 1
